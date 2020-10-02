@@ -1,14 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Morse Code Translator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Morse Code</title>
 </head>
+
 <body>
-    hello
-    
-    <script src="main.js" charset="utf-8"></script>
+
+    <section id="section-1">
+        <h1>Morse code</h1>
+    </section>
+
+    <section id="section-2" class ="bg-dark">
+        <form class ="bg-dark" action="">
+            <label id="label-1" for="input">Input your text here:</label>
+            <textarea id="input" name="input" cols="30" rows="10" placeholder="INSTRUCTIONS: Insert your text here to translate into morse code. If you wish to translate morse code into text instead, input your morse code here, click on the arrow to turn it red, then click on translate."></textarea>
+            <br>
+            <i class="fa fa-arrows-v" aria-hidden="true"></i>
+            <br>
+            <label id="label-2" for="output">Your translation is:</label>
+            <textarea id="output" name="output" cols="30" rows="10" readonly></textarea> 
+            <br>
+            <button id="submit" type="button"  class="btn btn-danger">Click here to translate!</button>
+            <br>
+            <button id="refresh-button" type="button"  class="btn btn-danger">Click here to refresh!</button>
+        </form>
+    </section>
+
+    <script src="./main.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+
+    body {
+        width: 100vw;
+        height: 100vh;
+        background-color: black;
+
+        #section-1 {
+            height: 20%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: black;
+            color: white;
+
+            p {
+                display: none;
+                height: 100px;
+                font-size: 2em;
+                width: 33%;
+                padding-left: 30px;
+            }
+
+            h1 {
+                color: red;
+                text-align: center;
+                display: block;
+                font-size: 3em;
+                width: 100%;
+                padding: 20px;
+            }
+
+            div {
+                display: none;
+
+                img {
+                    width: 50%;
+                }
+            }
+
+            @media screen and (min-width: 850px) {
+                p {
+                    display: unset;
+                }
+
+                h1 {
+                    font-size: 3em;
+                    width: 33%;
+                    font-size: 2em;
+                }
+
+                div {
+                    display: unset;
+                    width: 33%;
+                    display: flex;
+                    justify-content: center;
+
+                    img {
+                        width: 50%;
+                    }
+                }
+            }
+        }
+
+        #section-2 {
+            height: 80%;
+            display: flex;
+            align-items: center;
+            background-color: black;
+
+            form {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                height: 90%;
+                align-items: center;
+                justify-content: space-between;
+                background-color: black;
+
+                label {
+                    font-size: 1.5em;
+                    color: white;
+                    background-color: black;
+                    padding: 10px;
+
+                    &.arrowToggle {
+                        color: whitesmoke;
+
+                    }
+                }
+
+                textarea {
+                    width: 100%;
+                    padding: 5px;
+                }
+
+                i {
+                    font-size: 2em;
+                    color: yellow;
+
+                    &.red {
+                        color: red;
+                    }
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+
+                button {
+                    padding-bottom: 10px;
+                }
+
+                @media screen and (min-width: 480px) {
+                    textarea {
+                        width: 60%;
+                    }
+
+                    label {
+                        font-size: 2em;
+                    }
+
+                    i {
+                        font-size: 3em;
+                    }
+                }
+            }
+        }
+    }
+}
