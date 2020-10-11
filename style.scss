@@ -3,27 +3,20 @@
     margin: 0;
     padding: 0;
     background-color: black;
+    color: white;
 
     body {
         width: 100vw;
         height: 100vh;
         background-color: black;
 
-        #section-1 {
+        header {
             height: 20%;
             display: flex;
             justify-content: space-evenly;
             align-items: center;
             background-color: black;
             color: white;
-
-            p {
-                display: none;
-                height: 100px;
-                font-size: 2em;
-                width: 33%;
-                padding-left: 30px;
-            }
 
             h1 {
                 color: red;
@@ -34,42 +27,21 @@
                 padding: 20px;
             }
 
-            div {
-                display: none;
-
-                img {
-                    width: 50%;
-                }
-            }
-
             @media screen and (min-width: 850px) {
-                p {
-                    display: unset;
-                }
-
                 h1 {
                     font-size: 3em;
                     width: 33%;
                     font-size: 2em;
                 }
-
-                div {
-                    display: unset;
-                    width: 33%;
-                    display: flex;
-                    justify-content: center;
-
-                    img {
-                        width: 50%;
-                    }
-                }
             }
         }
 
-        #section-2 {
+        section {
             height: 80%;
             display: flex;
             align-items: center;
+            flex-direction: column;
+            justify-content: space-between;
             background-color: black;
 
             form {
@@ -86,20 +58,16 @@
                     color: white;
                     background-color: black;
                     padding: 10px;
-
-                    &.arrowToggle {
-                        color: whitesmoke;
-
-                    }
                 }
 
                 textarea {
                     width: 100%;
                     padding: 5px;
+                    margin: 10px;
                 }
 
                 i {
-                    font-size: 2em;
+                    font-size: 5em;
                     color: yellow;
 
                     &.red {
@@ -112,7 +80,8 @@
                 }
 
                 button {
-                    padding-bottom: 10px;
+                    margin: 10px;
+                    color: white;
                 }
 
                 @media screen and (min-width: 480px) {

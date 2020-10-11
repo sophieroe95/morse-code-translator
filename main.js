@@ -1,9 +1,9 @@
-let input = document.getElementById('input');
-let output = document.getElementById('output');
-let submit = document.getElementById('submit');
+let input = document.querySelector('#input');
+let output = document.querySelector('#output');
+let submit = document.querySelector('#submit');
 let arrow = document.querySelector("i");
-let label1 = document.getElementById("label-1");
-let label2 = document.getElementById("label-2");
+let label1 = document.querySelector("#label-1");
+let label2 = document.querySelector("#label-2");
 const refreshButton = document.querySelector('#refresh-button')
 
 const morseCode = {
@@ -104,15 +104,18 @@ const alphabet = {
     "/": " ",
     "-·-·--": "!",
     "·-·-·-": ".",
-    "--··--": ","
+    "--··--": ",",
+    '..--..': "?",
+    '.----.': "'",
+    '-..-.': "/",
+    '-.--.': "(",
+    '-.--.-': ")"
 }
 
 arrow.addEventListener('click', () => {
     label1.classList.toggle("arrowToggle");
     arrow.classList.toggle("red");
 })
-
-
 
 submit.addEventListener('click', () => {
     if (label1.classList.contains("arrowToggle")) {
@@ -122,6 +125,9 @@ submit.addEventListener('click', () => {
     }
 })
 
+refreshButton.addEventListener('click', () => {
+    location.reload();
+});
 
 const textToMorse = () => {
     const morseCodeArray = [];
@@ -137,8 +143,6 @@ const textToMorse = () => {
     });
 }
 
-
-
 const morseToText = () => {
     const alphabetArray = [];
     const inputArray = input.value.split(' ');
@@ -153,13 +157,6 @@ const morseToText = () => {
         output.value = translatedCode;
 
     });
-
-
-
 }
 
-const refreshPage = () => {
-    location.reload();
-  }
-
-  refreshButton.addEventListener('click', refreshPage)
+//code adapted from https://github.com/severine98/Morse-Code
