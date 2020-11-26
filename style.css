@@ -5,12 +5,13 @@
   background-color: black;
   color: white;
 }
-* body {
+
+body {
   width: 100vw;
   height: 100vh;
   background-color: black;
 }
-* body header {
+body header {
   height: 20%;
   display: flex;
   justify-content: space-evenly;
@@ -18,7 +19,7 @@
   background-color: black;
   color: white;
 }
-* body header h1 {
+body header h1 {
   color: red;
   text-align: center;
   display: block;
@@ -26,14 +27,7 @@
   width: 100%;
   padding: 20px;
 }
-@media screen and (min-width: 850px) {
-  * body header h1 {
-    font-size: 3em;
-    width: 33%;
-    font-size: 2em;
-  }
-}
-* body section {
+body section {
   height: 80%;
   display: flex;
   align-items: center;
@@ -41,48 +35,44 @@
   justify-content: space-between;
   background-color: black;
 }
-* body section form {
+body section form {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  height: 90%;
+  width: 80%;
+  height: 120%;
   align-items: center;
   justify-content: space-between;
   background-color: black;
 }
-* body section form label {
+body section form label {
   font-size: 1.5em;
   color: white;
   background-color: black;
   padding: 10px;
 }
-* body section form textarea {
+body section form textarea {
   width: 100%;
   padding: 5px;
   margin: 10px;
 }
-* body section form i {
+body section form i {
   font-size: 5em;
   color: yellow;
 }
-* body section form i.red {
+body section form i.red {
   color: red;
 }
-* body section form i:hover {
+body section form i:hover {
   cursor: pointer;
 }
-* body section form button {
+body section form button {
   margin: 10px;
+  height: 100px;
   color: white;
 }
-@media screen and (min-width: 480px) {
-  * body section form textarea {
-    width: 60%;
-  }
-  * body section form label {
-    font-size: 2em;
-  }
-  * body section form i {
-    font-size: 3em;
+
+@media screen and (min-width: 720px) {
+  body section form {
+    height: 90%;
   }
 }
