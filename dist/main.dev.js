@@ -157,4 +157,4 @@ var morseToText = function morseToText() {
     console.log(translatedCode);
     output.value = translatedCode;
   });
-}; //code adapted from https://github.com/severine98/Morse-Code
+};
