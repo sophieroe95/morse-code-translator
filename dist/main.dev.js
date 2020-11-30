@@ -145,7 +145,6 @@ var textToMorse = function textToMorse() {
 var morseToText = function morseToText() {
   var alphabetArray = [];
   var inputArray = input.value.split(' ');
-  console.log(inputArray);
   inputArray.forEach(function (element) {
     if (alphabet.hasOwnProperty(element)) {
       var translation = alphabet[element];
